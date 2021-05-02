@@ -1,0 +1,14 @@
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+button {
+    margin: 25px 15px 0px 0px;
+}
+
+.editBotao {
+    background-color: #d9cd26;
+    color: white;
+}

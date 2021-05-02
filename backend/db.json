@@ -2,18 +2,45 @@
   "products": [
     {
       "id": 1,
-      "name": "Playstation 4 Pro",
-      "price": 2499.9
-    },
-    {
-      "id": 2,
-      "name": "Xbox One",
-      "price": 1699.9
+      "nome": "GTX 1650",
+      "descricao": "Placa de Vídeo da Nvidia, Gtx 1650",
+      "preco": 4400.5
     },
     {
       "id": 3,
-      "name": "Notebook Dell Inspirion 15 3000",
-      "price": 2900
+      "nome": "Intel G4560",
+      "descricao": "Processador Intel G4560, socket 1151 Kaby Lake",
+      "preco": 550.99
+    },
+    {
+      "id": 4,
+      "nome": "AMD A8 9600",
+      "descricao": "Processador AMD A8 9600, cache 2MB 3.1Ghz",
+      "preco": 499.5
+    },
+    {
+      "id": 5,
+      "nome": "ASrock B450M",
+      "descricao": "Placa mãe Asrock B450M, AMD AM4 DDR4",
+      "preco": 799.75
+    },
+    {
+      "id": 6,
+      "nome": "Gigabyte Gamming 3 B450M",
+      "descricao": "Placa mão da Gigabyte Gaming 3",
+      "preco": 599.99
+    },
+    {
+      "nome": "Notebook Acer",
+      "descricao": "É um Notebook da Acer",
+      "preco": 2000.99,
+      "id": 7
+    },
+    {
+      "nome": "SSD 500gb",
+      "descricao": "SSD Barracuda 120 lii/6gbps",
+      "preco": "899.95",
+      "id": 8
     }
   ]
 }

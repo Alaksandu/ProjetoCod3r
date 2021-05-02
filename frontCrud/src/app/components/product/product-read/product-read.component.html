@@ -1,0 +1,61 @@
+
+  <mat-form-field>
+    <input (keyup)="aplicandoFiltro($event.target.value)" matInput placeholder="Pesquisar">
+  </mat-form-field>
+
+
+<div class="mat-elevation-z8">
+  <table mat-table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef> No. </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.id}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="nome">
+      <mat-header-cell *matHeaderCellDef> Nome </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.nome}} </mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="preco">
+      <mat-header-cell *matHeaderCellDef> Preço </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.preco | currency: 'BRL'}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="descricao">
+      <mat-header-cell *matHeaderCellDef> Descrição </mat-header-cell>
+      <mat-cell *matCellDef="let element"> {{element.descricao}} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="action">
+      <mat-header-cell  *matHeaderCellDef> Ações </mat-header-cell>
+      <mat-cell *matCellDef="let element"> 
+        <a routerLink="/products/update/{{element.id}}" class="edit">
+          <i class="material-icons">
+            edit
+          </i>
+        </a>
+
+        <a routerLink="/products/delete/{{ element.id }}" class="delete">
+          <i class="material-icons">
+            delete
+          </i>
+        </a>
+
+      </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+
+    
+  </table>
+
+  <mat-paginator paginator
+    [length]="products.length"
+    [pageIndex]="0"
+    [pageSize]="5"
+    [pageSizeOptions]="[1, 5]">
+    </mat-paginator>
+</div>
+

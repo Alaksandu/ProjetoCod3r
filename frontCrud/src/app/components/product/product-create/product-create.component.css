@@ -1,0 +1,16 @@
+button {
+    margin: 25px 15px 0px 0px;
+}
+
+.BotaoSalvar {
+    background-color: #42A5F5;
+    color: white;
+
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
