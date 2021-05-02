@@ -1,7 +1,3 @@
-<style type="text/css">
-    h1 {color: #42A5F5}
-</style>
-
 <h1 align="center" color="blue">
     Demo Typhoon
 </h1>
